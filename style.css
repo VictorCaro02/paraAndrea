@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('./fondo.jpg_large');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilo del contenedor */
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    width: 70vw;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* opacity: 0; */
+    /* animation: fade-in 2s ease-in-out forwards; Aplicar la animación */
+}
+
+/* Definición de la animación */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Un pequeño desplazamiento */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #c0392b;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: auto;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
